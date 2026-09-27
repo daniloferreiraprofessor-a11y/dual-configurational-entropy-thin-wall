@@ -79,4 +79,3 @@ The local reconstruction checks, including a fresh-environment test from
 
 The plotting code was developed with assistance from OpenAI ChatGPT and
 Codex. The author directed the analysis and reviewed the results.
-
