@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code and data package, please cite this repository."
+type: software
+title: "Dual configurational entropy and universal thin-wall scaling: numerical code and data"
+authors:
+  - family-names: "Ferreira"
+    given-names: "Danilo Cardoso"
+    orcid: "https://orcid.org/0000-0002-9329-3978"
+repository-code: "https://github.com/daniloferreiraprofessor-a11y/dual-configurational-entropy-thin-wall"

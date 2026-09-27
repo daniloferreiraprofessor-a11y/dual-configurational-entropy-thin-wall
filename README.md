@@ -1,5 +1,8 @@
 # Dual configurational entropy and thin-wall scaling: reproducibility package
 
+Author: [Danilo Cardoso Ferreira](https://orcid.org/0000-0002-9329-3978)
+(ORCID: 0000-0002-9329-3978).
+
 This repository contains the numerical code and data accompanying
 the manuscript *Dual configurational entropy and universal thin-wall scaling*.
 The author reports having reviewed the manuscript's scientific claims and
