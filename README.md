@@ -11,7 +11,8 @@ using Wolfram Mathematica 15.0 and Fortran. Those separate implementations
 are not included here; the reproducibility route provided here uses Python.
 The repository is available at
 https://github.com/daniloferreiraprofessor-a11y/dual-configurational-entropy-thin-wall.
-No archival DOI has been assigned yet.
+Version-specific archival DOIs are available from Zenodo once a GitHub
+release has been processed.
 
 ## Licensing
 
@@ -75,7 +76,8 @@ read `numerics/thin_wall_profiles.npz` and save their output tables under
 
 This package records the Python calculations. The author's
 cross-software checks are reported separately in `VALIDATION.md`; they cannot
-be rerun from this package. No public DOI has been assigned yet.
+be rerun from this package. The DOI for a published version is shown on its
+Zenodo record.
 
 The local reconstruction checks, including a fresh-environment test from
 `requirements.txt`, are documented in `VALIDATION.md`.
