@@ -1,18 +1,18 @@
-# Dual configurational entropy and thin-wall scaling: reproducibility package
+# Dual configurational entropy: radial thin-wall scaling and critical bubbles — reproducibility package
 
 Author: [Danilo Cardoso Ferreira](https://orcid.org/0000-0002-9329-3978)
 (ORCID: 0000-0002-9329-3978).
 
 This repository contains the numerical code and data accompanying
-the manuscript *Dual configurational entropy and universal thin-wall scaling*.
+the manuscript *Dual configurational entropy: radial thin-wall scaling and critical bubbles*.
 The author reports having reviewed the manuscript's scientific claims and
 independently cross-checked the numerical results represented in the figures
 using Wolfram Mathematica 15.0 and Fortran. Those separate implementations
 are not included here; the reproducibility route provided here uses Python.
 The repository is available at
 https://github.com/daniloferreiraprofessor-a11y/dual-configurational-entropy-thin-wall.
-Version-specific archival DOIs are available from Zenodo once a GitHub
-release has been processed.
+The archived v1.0.0 code and data have the version-specific DOI
+[10.5281/zenodo.23001558](https://doi.org/10.5281/zenodo.23001558).
 
 ## Licensing
 
