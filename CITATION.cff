@@ -1,8 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this code and data package, please cite this repository."
 type: software
-title: "Dual configurational entropy and universal thin-wall scaling: numerical code and data"
+title: "Dual configurational entropy: radial thin-wall scaling and critical bubbles — numerical code and data"
 version: 1.0.0
+doi: 10.5281/zenodo.23001558
 authors:
   - family-names: "Ferreira"
     given-names: "Danilo Cardoso"
