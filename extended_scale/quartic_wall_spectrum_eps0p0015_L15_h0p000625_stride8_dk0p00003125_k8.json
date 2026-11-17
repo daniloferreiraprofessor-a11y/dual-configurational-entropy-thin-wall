@@ -1,0 +1,61 @@
+{
+  "profilePath": "C:\\Users\\danil\\.codex\\.chatgpt-projects\\g-p-6aa03f01c5d0819187e3044af49590ac\\analysis\\quartic_wall_bvp_profile_eps0p0015_L15_h0p000625.csv",
+  "summaryPath": "C:\\Users\\danil\\.codex\\.chatgpt-projects\\g-p-6aa03f01c5d0819187e3044af49590ac\\analysis\\quartic_wall_bvp_profile_eps0p0015_L15_h0p000625.json",
+  "epsilon": 0.0015,
+  "R_phase": 157.56390878159488,
+  "R_half_center": 157.56390878159488,
+  "ell": 1.3138293301269108,
+  "Lambda_3": 119.92722735636814,
+  "phi_tv": 2.0089600378914954,
+  "left_endpoint_phi": 2.008960037545494,
+  "right_endpoint_phi": 2.7134354850387577e-9,
+  "max_phi_over_phi_tv": 0.9999999998277709,
+  "wall_h": 0.0049999999999954525,
+  "profile_stride": 8,
+  "spectral_dk": 0.00003125,
+  "kMax": 8,
+  "transformZero": 2651097.825263936,
+  "Sx_3": 283800.3136591262,
+  "Sk_3": 0.00003693913297222206,
+  "U_3": 10.48333752381279,
+  "H": 238.67534421118035,
+  "max_raw_q": 0.9999951106132372,
+  "q_overshoot_count": 0,
+  "odeChecks": [
+    {
+      "k": 0.5,
+      "f": 879.8664298888502,
+      "fOde": 879.8664163716836,
+      "relative_difference": -1.5362748438164515e-8,
+      "normalized_absolute_difference": 5.098705333599898e-12
+    },
+    {
+      "k": 1,
+      "f": -68.02405460969311,
+      "fOde": -68.02405260917351,
+      "relative_difference": -2.9409002625921497e-8,
+      "normalized_absolute_difference": 7.546004457391631e-13
+    },
+    {
+      "k": 2,
+      "f": 5.121291084303941,
+      "fOde": 5.1212904753763,
+      "relative_difference": -1.1890119712611565e-7,
+      "normalized_absolute_difference": 2.2968886132838884e-13
+    },
+    {
+      "k": 3,
+      "f": 0.6049314247560753,
+      "fOde": 0.6049312253716627,
+      "relative_difference": -3.295983717944277e-7,
+      "normalized_absolute_difference": 7.5208244202394e-14
+    },
+    {
+      "k": 5,
+      "f": -0.0032557495035554496,
+      "fOde": -0.003255731469720466,
+      "relative_difference": -0.000005539073249891863,
+      "normalized_absolute_difference": 6.802402692061091e-15
+    }
+  ]
+}

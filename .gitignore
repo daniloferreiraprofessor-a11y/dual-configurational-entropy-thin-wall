@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 .pytest_cache/
 RELEASE_CHECKLIST.md
+*.exe
+*.mod
+fortran/mesh_*.log

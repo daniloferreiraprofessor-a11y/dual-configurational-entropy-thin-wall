@@ -1,0 +1,64 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{bubble}{HTML}{31688E}
+\definecolor{correction}{HTML}{D1495B}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{loglogaxis}[
+    width=3.45in,
+    height=2.8in,
+    xmin=3.5,
+    xmax=70,
+    ymin=18,
+    ymax=500,
+    xtick={5,10,20,40,60},
+    ytick={20,30,40,60,100,200,400},
+    xlabel={$\Lambda_{3}$},
+    ylabel={$\mathcal U_{3}$},
+    xlabel style={font=\small},
+    ylabel style={font=\small},
+    tick label style={font=\footnotesize},
+    tick align=outside,
+    axis line style={black,thin},
+    legend style={
+        draw=none,
+        fill=none,
+        font=\scriptsize,
+        at={(0.98,0.98)},
+        anchor=north east,
+        cells={anchor=west},
+    },
+    log ticks with fixed point,
+]
+\addplot+[
+    only marks,
+    mark=*,
+    mark size=1.45pt,
+    draw=bubble,
+    fill=bubble,
+] table[x=Lambda_3,y=U_3,col sep=comma]
+    {../numerics/thin_wall_observables.csv};
+\addlegendentry{numerical bubbles}
+
+\addplot[
+    black,
+    dashed,
+    thick,
+    domain=3.7:68,
+    samples=240,
+] {1387.248201576/x};
+\addlegendentry{$C_{\Lambda,3}/\Lambda_{3}$}
+
+\addplot[
+    correction,
+    densely dotted,
+    very thick,
+    domain=20:60.3775,
+    samples=180,
+] {1387.248201576/x-3307.053668612*ln(x)/(x*x)};
+\addlegendentry{analytic correction}
+\end{loglogaxis}
+\end{tikzpicture}
+\end{document}

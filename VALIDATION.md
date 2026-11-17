@@ -34,6 +34,29 @@ Separately, the author reports having inspected the manuscript's scientific
 claims and found no mathematical errors or unsupported general statements.
 The author also reports that the numerical results represented in the three
 figures were independently cross-checked using Wolfram Mathematica 15.0 and
-Fortran. Those independent implementations and their raw outputs are not part
-of this Python package, so this document does not claim to reproduce those
-cross-software checks.
+Fortran. The Mathematica notebooks and the earlier cross-check implementations
+are not part of this package, so this document does not claim to reproduce
+those cross-software checks.
+
+## Additional action-correction validation, 2026-11-17
+
+The independent Fortran source in `fortran/bubble_action_check.f90` solves the
+quartic and sextic radial boundary-value problems without reading saved
+profiles. It was compiled with GNU Fortran 16.1.0 using `-O2 -std=f2008
+-Wall -Wextra -fcheck=all`, with no compiler warnings. The action is calculated
+as `T+V` by composite Simpson quadrature and compared with `2T/3`.
+
+At four exact vacuum gaps per model, `fortran/action_grid_summary.csv`
+records the analytic first-order term, two-grid Richardson estimate of
+`Q=B_3/B_TW-1`, and `rho=(Q-Q_first)/(Delta W)^2`. The resulting `rho`
+sequence is `1.34970, 1.35200, 1.35314, 1.35371` for the quartic and
+`16.08533, 16.16303, 16.20062, 16.21907` for the sextic model as the
+gap decreases.
+
+For the smallest gap of each model, a third spacing `h=0.003125` gives
+successive-change ratios `3.999987` and `3.999989`. The Richardson
+estimates from the two consecutive grid pairs differ by `2.55e-11` and
+`1.84e-11` in `Q`. These checks support second-order grid convergence and
+the observed quadratic action remainder. They do not prove a uniform
+asymptotic expansion or bound all systematic errors. Build and run commands
+are in `fortran/README.md`.
