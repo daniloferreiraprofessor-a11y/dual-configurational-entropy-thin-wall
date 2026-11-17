@@ -14,6 +14,9 @@ The Mathematica notebooks and earlier cross-check implementations are not
 included here.
 The repository is available at
 https://github.com/daniloferreiraprofessor-a11y/dual-configurational-entropy-thin-wall.
+The current v1.1.0 package, including the additional wall-centered and
+Fortran checks, has the version-specific DOI
+[10.5281/zenodo.24318129](https://doi.org/10.5281/zenodo.24318129).
 The archived v1.0.0 code and data for the original sequence have the
 version-specific DOI
 [10.5281/zenodo.23001558](https://doi.org/10.5281/zenodo.23001558).
@@ -103,8 +106,8 @@ read `numerics/thin_wall_profiles.npz` and save their output tables under
 The original sequence uses Python, the independent larger-scale checks use
 Node.js, and the action-correction check uses Fortran. The Mathematica
 cross-checks are reported separately in `VALIDATION.md` and cannot be rerun
-from this package. The DOI for each archived version is shown on its Zenodo
-record; the v1.0.0 DOI above does not identify these later additions.
+from this package. The version-specific DOIs above identify the respective
+archived packages; the v1.0.0 DOI does not identify the later additions.
 
 The local reconstruction checks, including a fresh-environment test from
 `requirements.txt`, are documented in `VALIDATION.md`.

@@ -3,6 +3,7 @@ message: "If you use this code and data package, please cite this repository."
 type: software
 title: "Dual configurational entropy: radial thin-wall scaling and critical bubbles — numerical code and data"
 version: 1.1.0
+doi: 10.5281/zenodo.24318129
 authors:
   - family-names: "Ferreira"
     given-names: "Danilo Cardoso"
